@@ -1,0 +1,160 @@
+
+
+.timerround{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height:5px;
+    width:100%;
+    animation:lineanim 15s;
+    animation-timing-function: linear;
+}
+
+@keyframes lineanim{
+    0% {width:100%;background-color: green;}
+    25% {width:75%; background-color: yellow;}
+    50% {width:50%;background-color: orange;}
+    75% {width:25%;background-color: red;}
+    100% {width:0%;background-color: red;}
+
+}
+
+
+.timer p{
+    animation:zoom 1s infinite;
+    animation-timing-function: linear;
+    transition:linear;
+}
+
+
+
+.gameStart p{
+
+    animation:zoom3 1s infinite;
+    animation-timing-function: linear;
+    transition:linear;
+}
+
+@keyframes zoom3{
+    0% {font-size:200%;}
+    90% {font-size:1500%;}
+    100%{font-size:900%;}
+
+}
+
+
+@keyframes zoom{
+    0% {font-size:200%;}
+    50% {font-size:2000%;}
+    100%{font-size:200%;}
+
+}
+
+.total-buttons{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.answers{
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+
+.total-buttons button{
+    margin:1%;
+    padding:20px;
+    font-size:20px;
+    align-self:center;
+    background-color: rgb(237, 100, 100);
+    border-radius:13px;
+    transform: scale(1);
+    transition: 0.3s linear;
+}
+
+.total-buttons button:hover{
+    transform: scale(1.1);
+    background-color: rgb(228, 18, 18);
+    transition: 0.3s linear;
+    font-weight: bold;
+}
+
+.nquestion{
+    margin:1%;
+    padding:20px;
+    font-size:20px;
+    align-self:center;
+    background-color: rgb(237, 100, 100);
+    border-radius:13px;
+    transform: scale(1);
+    transition: 0.3s linear;
+}
+
+.nquestion:hover{
+    transform: scale(1.1);
+    background-color: rgb(228, 18, 18);
+    transition: 0.3s linear;
+    font-weight: bold;
+}
+
+.endgame-buttons{
+    margin-top:1%;
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+
+.endgame p{
+    margin-top:1%;
+    font-size:150%;
+}
+
+.endgame{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.endgame-buttons button{
+    margin:0 10px;
+    margin:1%;
+    padding:15px;
+    font-size:15px;
+    align-self:center;
+    background-color: rgb(237, 100, 100);
+    border-radius:13px;
+    transform: scale(1);
+    transition: 0.3s linear;
+}
+
+.endgame-buttons button:hover{
+    transform: scale(1.1);
+    background-color: rgb(228, 18, 18);
+    transition: 0.3s linear;
+    font-weight: bold;
+}
+
+.endgame h1{
+
+    animation:zoom4 1s infinite;
+    animation-timing-function: linear;
+    transition:linear;
+}
+
+@keyframes zoom4{
+    0% {font-size:200%;}
+    50% {font-size:250%;}
+    100%{font-size:200%;}
+}
+

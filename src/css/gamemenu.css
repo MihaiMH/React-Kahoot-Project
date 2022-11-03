@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(220, 217, 217);
+    height:100vh;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.contentgamemenu h1{
+    animation:zoom2 1s infinite;
+    animation-timing-function: linear;
+    transition:linear;
+}
+
+.contentgamemenu p{
+    font-size:150%;
+}
+
+
+@keyframes zoom2{
+    0% {font-size:350%;}
+    50% {font-size:400%;}
+    100%{font-size:350%;}
+
+}
+
